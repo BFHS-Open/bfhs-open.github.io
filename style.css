@@ -47,4 +47,8 @@ p {
 
 nav a {
     margin: 0px 10px;
+    color: #eeeeee;
+}
+.navbar{    
+    background-color: #3f7e42;
 }

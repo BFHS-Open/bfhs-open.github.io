@@ -1,9 +1,8 @@
 ---
-title: "BFHS-OPEN"
-date: 2023-07-07T16:15:31-05:00
-draft: true
+title: "Home"
 ---
 
 ## Hi
+## What
 
 New site!

@@ -1,0 +1,9 @@
+- projects:
+  - name: Club Hub
+    description: Website for school clubs.
+    maintainer: Secr
+    link: "https://github.com"
+  - name: Website
+    description: This very website!
+    maintainer: Secr
+    link: "https://github.com"

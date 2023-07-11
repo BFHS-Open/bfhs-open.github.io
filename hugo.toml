@@ -2,6 +2,13 @@ baseURL = 'http://bfhs-open.org/'
 languageCode = 'en-us'
 title = 'BFHS-OPEN'
 
+[socials]
+  github = "bfhs-open"
+  twitter = "bfhs-open"
+  instagram = "bfhs-open"
+  youtube = "bfhs-open"
+  discord = "bfhs-open"
+
 [[menu.main]]
   name = "Home"
   url = "/"

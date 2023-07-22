@@ -1,0 +1,39 @@
+[[2022-2023.2]]
+title = "Demon"
+description = "Demo text"
+host = "John Doe"
+
+[[2022-2023.2.lesson]]
+title = "Slideshow"
+description = "Hi"
+link = "https://google.com"
+
+[[2022-2023.2.lesson]]
+title = "Slideshow"
+description = "Hi"
+link = "https://google.com"
+
+[[2022-2023.1]]
+title = "AAaaa"
+description = "Demo text"
+host = "John Doe"
+
+[[2022-2023.1.lesson]]
+title = "Slideshow"
+description = "Hi"
+link = "https://google.com"
+
+[[2022-2023.1.lesson]]
+title = "Slideshow"
+description = "Hi"
+link = "https://google.com"
+
+[[2021-2022.1]]
+title = "Daemon"
+description = "Demo"
+host = "John Doe"
+
+[[2021-2022.1.lesson]]
+title = "Slideshow"
+description = "Hi"
+link = "https://google.com"

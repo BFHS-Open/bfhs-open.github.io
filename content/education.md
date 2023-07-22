@@ -2,6 +2,6 @@
 title: "Education"
 ---
 
-## 20XX-20XX
+# Education
 
-(cards of each presentation)
+{{< education >}}

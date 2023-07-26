@@ -8,4 +8,4 @@ title: "About"
 
 ## Members
 
-(Executive & Contributing Members)
+{{< about >}}

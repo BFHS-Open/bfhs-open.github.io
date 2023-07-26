@@ -1,0 +1,30 @@
+
+[[stewarded]]
+name = "BFHS-OPEN Website"
+description = "This website"
+members = [ "Name" ]
+link = "http://github.com"
+
+[[stewarded]]
+name = "Ben Page"
+description = "Newtab page"
+members = [ "Name", "Name2" ]
+link = "http://github.com"
+
+[[stewarded]]
+name = "Video Games"
+description = "Fun game"
+members = [ "Name2" ]
+link = "http://github.com"
+
+[[affiliated]]
+name = "Vidya Gaem"
+description = "More fun game"
+members = [ "Name3" ]
+link = "https://github.com"
+
+[[contributed]]
+name = "Vid Gaem"
+description = "Most fun game"
+members = [ "Name3" ]
+link = "https://github.com"

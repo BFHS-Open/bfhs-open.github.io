@@ -1,52 +1,20 @@
-{{ range $year, $val := $.Site.Data.education }}
-  <div class="year">
-    <hr>
-    <h2>
-      {{ $year }}
-    </h2>
+{{ range sort $.Site.Data.education.event "" "desc" }}
 
-      <!-- Weeks -->
-      {{range $week, $val := $val }}
-        <div class="week">
-          <!-- Week # -->
-          <h3>
-            Week {{ $week }}
-          </h3>
+  <!-- Just read the first value of a year and get the year -->
+  <h2>Year: {{ (index . 0).date.year }}</h2>
+  
+  {{ range sort . ".date.week" "desc"}}
+    <div class="event">
+      <h3>Week {{ .date.week }} - {{ .title }}</h3>
+      <p>{{ .description }}</p>
+      <p>Hosts: {{ delimit .hosts ", " }}</p>
       
-          <!-- Week Title -->
-          <h4>
-            {{ index (index $val 0) "title" }}
-          </h4>
-      
-          <!-- Week Description -->
-          <p>
-            Description: {{ index (index $val 0) "description" }}
-          </p>
-          
-          <p>
-            Host: {{index (index $val 0) "host" }}
-          </p>
-      
-          <!-- Lessons -->
-          {{ range $val := (index $val 0).lesson }}
-            <div class="lesson">
-              <!-- Lesson Title -->
-              <h5>
-                {{ index $val "title" }}
-              </h5>
-        
-              <!-- Lesson Description -->
-              <p>
-                {{ index $val "description" }}
-              </p>
-        
-              <!-- Lessons Link -->
-              <p>
-                {{ index $val "link" }}
-              </p>
-            </div>
-          {{ end }}
-          </div>
+      {{ range .links }}
+        <div class="link">
+          <a href="{{ .url }}">{{ .title}}</a>
+        </div>
       {{ end }}
-  </div>
+           
+    </div>
+  {{ end }}
 {{ end }}

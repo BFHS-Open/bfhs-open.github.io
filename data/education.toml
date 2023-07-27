@@ -1,39 +1,49 @@
-[[2022-2023.2]]
-title = "Demon"
-description = "Demo text"
-host = "John Doe"
+[[event.2022-2023]]
+date = { year = "2022-2023", week = 1}
+title = "Presentation"
+description = "Cool"
+hosts = [ "John Doe", "Jane Doe"]
+links = [
+  { title = "Link1", url = "https://google.com" },
+  { title = "Wow", url = "Hi"}
+]
 
-[[2022-2023.2.lesson]]
-title = "Slideshow"
-description = "Hi"
-link = "https://google.com"
+[[event.2022-2023]]
+date = { year = "2022-2023", week = 2}
+title = "Presentation"
+description = "Cool"
+hosts = [ "John Doe", "Jane Doe"]
+links = [
+  { title = "Link1", url = "https://google.com" },
+  { title = "Wow", url = "Hi"}
+]
 
-[[2022-2023.2.lesson]]
-title = "Slideshow"
-description = "Hi"
-link = "https://google.com"
+[[event.2022-2023]]
+date = { year = "2022-2023", week = 3}
+title = "Presentation"
+description = "Cool"
+hosts = [ "John Doe", "Jane Doe"]
+links = [
+  { title = "Link1", url = "https://google.com" },
+  { title = "Wow", url = "Hi"}
+]
 
-[[2022-2023.1]]
-title = "AAaaa"
-description = "Demo text"
-host = "John Doe"
+[[event.2021-2022]]
+date = { year = "2021-2022", week = 2}
+title = "Presentation"
+description = "Cool"
+hosts = [ "John Doe", "Jane Doe"]
+links = [
+  { title = "Link1", url = "https://google.com" },
+  { title = "Wow", url = "Hi"}
+]
 
-[[2022-2023.1.lesson]]
-title = "Slideshow"
-description = "Hi"
-link = "https://google.com"
-
-[[2022-2023.1.lesson]]
-title = "Slideshow"
-description = "Hi"
-link = "https://google.com"
-
-[[2021-2022.1]]
-title = "Daemon"
-description = "Demo"
-host = "John Doe"
-
-[[2021-2022.1.lesson]]
-title = "Slideshow"
-description = "Hi"
-link = "https://google.com"
+[[event.2021-2022]]
+date = { year = "2021-2022", week = 1}
+title = "Presentation"
+description = "Cool"
+hosts = [ "John Doe", "Jane Doe"]
+links = [
+  { title = "Link1", url = "https://google.com" },
+  { title = "Wow", url = "Hi"}
+]

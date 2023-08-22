@@ -1,49 +1,49 @@
-[[event.2022-2023]]
+[[event]]
 date = { year = "2022-2023", week = 1}
 title = "Presentation"
 description = "Cool"
 hosts = [ "John Doe", "Jane Doe"]
 links = [
   { title = "Link1", url = "https://google.com" },
-  { title = "Wow", url = "Hi"}
+  { title = "Wow", url = "https://youtube.com/"}
 ]
 
-[[event.2022-2023]]
+[[event]]
 date = { year = "2022-2023", week = 2}
 title = "Presentation"
 description = "Cool"
 hosts = [ "John Doe", "Jane Doe"]
 links = [
   { title = "Link1", url = "https://google.com" },
-  { title = "Wow", url = "Hi"}
 ]
 
-[[event.2022-2023]]
+[[event]]
 date = { year = "2022-2023", week = 3}
 title = "Presentation"
 description = "Cool"
-hosts = [ "John Doe", "Jane Doe"]
+hosts = [ "John Doe" ]
 links = [
   { title = "Link1", url = "https://google.com" },
-  { title = "Wow", url = "Hi"}
+  { title = "Wow", url = "https://youtube.com/"},
+  { title = "Wow", url = "https://youtube.com/"}
 ]
 
-[[event.2021-2022]]
+[[event]]
 date = { year = "2021-2022", week = 2}
 title = "Presentation"
 description = "Cool"
 hosts = [ "John Doe", "Jane Doe"]
 links = [
   { title = "Link1", url = "https://google.com" },
-  { title = "Wow", url = "Hi"}
+  { title = "Wow", url = "https://youtube.com/"}
 ]
 
-[[event.2021-2022]]
+[[event]]
 date = { year = "2021-2022", week = 1}
 title = "Presentation"
 description = "Cool"
 hosts = [ "John Doe", "Jane Doe"]
 links = [
   { title = "Link1", url = "https://google.com" },
-  { title = "Wow", url = "Hi"}
+  { title = "Wow", url = "https://youtube.com/"}
 ]

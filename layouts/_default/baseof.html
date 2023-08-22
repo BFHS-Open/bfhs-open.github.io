@@ -2,9 +2,17 @@
 <html>
     {{ partial "head.html" . }}
     <body>
-        {{ partial "header.html" . }}
         <main>
-            {{ block "main" . }}{{ end }}
+            <article>
+                <div class="fakeHeader">BFHS-OPEN</div>
+                                
+                <h1>{{ .Title }}</h1>
+                {{ partial "header.html" . }}
+                                
+                <hr>
+            
+                {{ block "main" . }}{{ end }}
+            </article>
         </main>
     </body>
 </html>

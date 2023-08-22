@@ -1,0 +1,19 @@
+{{ $stewarded := $.Site.Data.projects.stewarded }}
+
+<div class="stewardedContainer">
+{{ range $stewarded }}
+  <div class="stewarded">
+    <div class="name">{{ .name }}</div>
+    <div class="description">{{ .description }}</div>
+    <div class="link"><a href="{{ .link }}">A</a></div>
+
+    <div class="members">
+    {{ range .members }}
+      <div class="member">
+        {{ . }}
+      </div>
+    {{ end }}
+    </div>
+  </div>
+{{ end }}
+</div>

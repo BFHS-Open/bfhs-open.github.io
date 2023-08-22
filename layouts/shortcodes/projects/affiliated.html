@@ -1,0 +1,19 @@
+{{ $affiliated := $.Site.Data.projects.affiliated }}
+
+<div class="affiliatedContainer">
+{{ range $affiliated }}
+  <div class="affiliated">
+    <div class="name">{{ .name }}</div>
+    <div class="description">{{ .description }}</div>
+    <div class="link"><a href="{{ .link }}" target="_blank">A</a></div>
+    
+    <div class="members">
+    {{ range .members }}
+      <div class="member">
+        {{ . }}
+      </div>
+    {{ end }}
+    <div>
+  </div>
+{{ end }}
+</div>

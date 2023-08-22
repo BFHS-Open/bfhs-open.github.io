@@ -1,20 +1,28 @@
-{{ range sort $.Site.Data.education.event "" "desc" }}
+{{ $events := partial "education/split_event_years.html" $.Site.Data.education }}
 
-  <!-- Just read the first value of a year and get the year -->
-  <h2>Year: {{ (index . 0).date.year }}</h2>
-  
-  {{ range sort . ".date.week" "desc"}}
-    <div class="event">
-      <h3>Week {{ .date.week }} - {{ .title }}</h3>
-      <p>{{ .description }}</p>
-      <p>Hosts: {{ delimit .hosts ", " }}</p>
-      
-      {{ range .links }}
-        <div class="link">
-          <a href="{{ .url }}">{{ .title}}</a>
+<div class="yearsContainer">
+{{ range ( sort $events "" "desc" )}}
+  <div class="yearContainer">
+    <h2 class="yearDate">{{ (index . 0 ).date.year}}</h2>
+    {{ range ( sort . ".date.week" "desc" )}}
+      <div class="year">
+        <h3 class="weekDate">Week {{.date.week}}</h3>
+        <div class="title">{{.title}}</div>
+        <div class="description">{{.description}}</div>
+
+        <div class="host">
+          {{ delimit .hosts ", " }}
         </div>
-      {{ end }}
-           
-    </div>
-  {{ end }}
+        
+        <div class="links">
+          {{ range .links }}
+            <div class="link">
+              <div><a href="{{ .url }}">{{.title}}</a></div>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+  </div>
 {{ end }}
+</div>

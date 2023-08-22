@@ -1,0 +1,19 @@
+{{ $contributed := $.Site.Data.projects.contributed }}
+
+<div class="contributedContainer">
+{{ range $contributed }}
+  <div class="contributed">
+    <div class="name">{{ .name }}</div>
+    <div class="description">{{ .description }}</div>
+    <div class="link"><a href="{{ .link }}">A</a></div>
+    
+    <div class="members">
+    {{ range .members }}
+      <div class="member">
+        {{ . }}
+      </div>
+    {{ end }}
+    </div>
+  </div>
+{{ end }}
+</div>

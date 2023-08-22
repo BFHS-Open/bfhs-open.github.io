@@ -1,0 +1,11 @@
+{{ $images := (slice "admire_working.jpg" "coding_wow.jpg" "holding_laptops.jpg") }}
+
+<div class="galleryContainer">
+	<div class="bounding not-prose">
+		<div class="galleryWrapper not-prose">
+		{{ range $images }}
+			<img class="galleryImg not-prose" src="gallery/{{ . }}">
+		{{ end }}
+		</div>
+	</div>
+</div>

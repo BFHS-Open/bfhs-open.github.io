@@ -2,6 +2,4 @@
 title: "Education"
 ---
 
-# Education
-
 {{< education >}}

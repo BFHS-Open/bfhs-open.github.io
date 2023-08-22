@@ -2,8 +2,20 @@
 title: "Projects"
 ---
 
-# Projects
+## Stewarded
 
-{{< projects >}}
+These are projects ran by the organization itself.
 
-(Cards of each project)
+{{< projects/stewarded >}}
+
+## Affiliated
+
+These are projects that are maintained by the members of this organization.
+
+{{< projects/affiliated >}}
+
+## Contributed
+
+These are projects that our current members have activly contributed towards.
+
+{{< projects/contributed >}}

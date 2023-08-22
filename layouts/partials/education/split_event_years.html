@@ -1,0 +1,9 @@
+{{ $event := .event }}
+
+{{ $s := newScratch }}
+
+{{ range (sort $event ".date.year") }}
+  {{ $s.Add .date.year (slice .) }}
+{{ end }}
+
+{{ return $s.Values }}

@@ -1,0 +1,11 @@
+<!-- Takes output from split_executive_history. Do not pipe in the toml directly -->
+
+{{ $executives := . }}
+
+{{ $s := newScratch }}
+
+{{ range $executives }}
+  {{ $s.Add .year (slice .) }}
+{{ end }}
+
+{{ return $s.Values }}

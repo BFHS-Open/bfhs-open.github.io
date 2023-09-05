@@ -1,0 +1,28 @@
+{{ $contributors := $.Site.Data.members.contributor }}
+
+{{ $only := .Get "only" }}
+
+<div class="contributerContainer">
+{{ if (eq $only "current" )}}
+  {{ range (index (sort (partial "members/split_contributor_by_year" $contributors) "" "desc" ) 0) }}
+    <div class="contributor">
+  			<div class="name">{{ .name }} ('{{ .graduation_year }})</div>
+  			<div class="socials">
+  				<div class="github"><a href="https://github.com/{{.socials.github}}">github</a></div>
+			
+  				<div class="website"><a href="{{ .socials.website }}">website</a></div>
+  			</div>
+    </div>
+  {{ end }}
+{{ else }}
+  {{ range (sort $contributors ".name" "asc") }}
+    <div class="contributor">
+  			<div class="name">{{ .name }} ('{{ .graduation_year }})</div>
+  			<div class="socials">
+  				<div class="github"><a href="https://github.com/{{.socials.github}}">github</a></div>
+			
+  				<div class="website"><a href="{{ .socials.website }}">website</a></div>
+  			</div>
+    {{ end }}
+{{ end }}
+</div>

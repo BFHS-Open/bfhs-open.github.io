@@ -1,0 +1,49 @@
+[[event]]
+date = { year = "2022-2023", week = 1}
+title = "Presentation"
+description = "Cool"
+hosts = [ "John Doe", "Jane Doe"]
+links = [
+  { title = "Link1", url = "https://google.com" },
+  { title = "Wow", url = "https://youtube.com/"}
+]
+
+[[event]]
+date = { year = "2022-2023", week = 2}
+title = "Presentation"
+description = "Cool"
+hosts = [ "John Doe", "Jane Doe"]
+links = [
+  { title = "Link1", url = "https://google.com" },
+]
+
+[[event]]
+date = { year = "2022-2023", week = 3}
+title = "Presentation"
+description = "Cool"
+hosts = [ "John Doe" ]
+links = [
+  { title = "Link1", url = "https://google.com" },
+  { title = "Wow", url = "https://youtube.com/"},
+  { title = "Wow", url = "https://youtube.com/"}
+]
+
+[[event]]
+date = { year = "2021-2022", week = 2}
+title = "Presentation"
+description = "Cool"
+hosts = [ "John Doe", "Jane Doe"]
+links = [
+  { title = "Link1", url = "https://google.com" },
+  { title = "Wow", url = "https://youtube.com/"}
+]
+
+[[event]]
+date = { year = "2021-2022", week = 1}
+title = "Presentation"
+description = "Cool"
+hosts = [ "John Doe", "Jane Doe"]
+links = [
+  { title = "Link1", url = "https://google.com" },
+  { title = "Wow", url = "https://youtube.com/"}
+]

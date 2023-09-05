@@ -1,0 +1,85 @@
+[[executive]]
+name = "Lorem"
+graduation_year = 23
+socials = { github = "bfhs-open", website = "https://google.com" }
+history = [
+  { position = "President", year = "2022-2023"},
+  { position = "Vice President", year = "2021-2022"},
+  { position = "Secretary", year = "2020-2021"},
+  { position = "Outreach Director", year = "2019-2020"},
+  { position = "Tech Lead", year = "2018-2019"},
+]
+
+[[executive]]
+name = "Ipsum"
+graduation_year = 23
+socials = { github = "github", website = "https://google.com" }
+history = [
+  { position = "Vice President", year = "2022-2023"},
+  { position = "Secretary", year = "2021-2022"},
+  { position = "Outreach Director", year = "2020-2021"},
+  { position = "Tech Lead", year = "2019-2020"},
+  { position = "President", year = "2018-2019"},
+]
+
+[[executive]]
+name = "Dolor"
+graduation_year = 23
+socials = { github = "github", website = "https://google.com" }
+history = [
+  { position = "Secretary", year = "2022-2023"},
+  { position = "Outreach Director", year = "2021-2022"},
+  { position = "Tech Lead", year = "2020-2021"},
+  { position = "President ", year = "2019-2020"},
+  { position = "Vice President", year = "2018-2019"},
+]
+
+[[executive]]
+name = "Sit"
+graduation_year = 23
+socials = { github = "github", website = "https://google.com" }
+history = [
+  { position = "Outreach Director", year = "2022-2023"},
+  { position = "Tech Lead", year = "2021-2022"},
+  { position = "President", year = "2020-2021"},
+  { position = "Vice President", year = "2019-2020"},
+  { position = "Secretary", year = "2018-2019"},
+]
+
+[[executive]]
+name = "Amet"
+graduation_year = 23
+socials = { github = "github", website = "https://google.com" }
+history = [
+  { position = "Tech Lead", year = "2022-2023"},
+  { position = "President", year = "2021-2022"},
+  { position = "Vice President", year = "2020-2021"},
+  { position = "Secretary", year = "2019-2020"},
+  { position = "Outreach Director", year = "2018-2019"},
+]
+
+[[contributor]]
+name = "Consectetur"
+graduation_year = 23
+socials = { github = "github", website = "https://google.com" }
+history = [
+  "2022-2023",
+  "2021-2022"
+]
+
+[[contributor]]
+name = "Adipiscing"
+graduation_year = 23
+socials = { github = "github", website = "https://google.com" }
+history = [
+  "2021-2022",
+  "2020-2021"
+]
+
+[[contributor]]
+name = "Elit"
+graduation_year = 23
+socials = { github = "github", website = "https://google.com" }
+history = [
+  "2020-2021"
+]

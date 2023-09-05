@@ -1,0 +1,11 @@
+{{- $members := . -}}
+
+{{- $s := newScratch -}}
+
+{{- range $member := $members }}
+  {{- range $member.history }}
+    {{- $s.Add . (slice $member) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return $s.Values -}}

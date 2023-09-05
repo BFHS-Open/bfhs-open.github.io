@@ -1,0 +1,129 @@
+<head>
+  {{ partial "head/meta.html" . }}
+
+  <title>{{ .Title }}</title>
+
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+        colors: {
+          clifford: '#da373d',
+        }
+      }
+    }
+  }
+  </script>
+  <style type="text/tailwindcss">
+    @layer base {
+      html {
+        --s: 150px; /* control the size */
+        --c1:white;
+        --c2: rgba(230,255,255);
+  
+        --g:,var(--c1) 25%,var(--c2) 0 50%,#0000 0;
+        background:
+          repeating-conic-gradient(var(--c1) 0 30deg,#0000 0 150deg,var(--c2) 0 50%)
+           calc(1.5*var(--s)) calc(.865*var(--s)),
+          conic-gradient(from  30deg at 75% 75%var(--g)),
+          conic-gradient(from -30deg at 75% 25%var(--g)),
+          conic-gradient(from 150deg at 25% 75%var(--g)),
+          conic-gradient(from 210deg at 25% 25%var(--g)),
+          repeating-conic-gradient(var(--c1) 0 30deg,var(--c2) 0 60deg);
+        background-size: calc(3*var(--s)) calc(1.73*var(--s))
+      }
+      main {
+        @apply md:mt-16;
+        @apply mx-auto;
+        @apply prose;
+        @apply md:prose-lg;
+        @apply prose-blue;
+      }
+      
+      h1, .fakeHeader {
+        @apply text-center;
+        @apply text-7xl;
+        @apply md:text-8xl;
+        @apply font-semibold;
+        @apply font-sans;
+        @apply text-black;
+        @apply mb-3;
+      }
+      
+      nav {
+        @apply flex;
+        @apply justify-between;
+        @apply list-none;
+        @apply mx-4;
+        @apply md:mx-8;
+      }
+      
+      hr {
+        @apply border-dashed;
+        @apply border-2;
+        @apply border-black;
+        @apply my-4;
+      }
+      
+      main > * {
+        margin-left: 1ch;
+        margin-right: 1ch;
+      }
+      
+      .galleryContainer {
+        @apply p-2;
+        @apply bg-white;
+        @apply rounded-lg;
+        @apply shadow-lg;
+      }
+      
+      .galleryWrapper {
+        @apply flex;
+        @apply flex-row;
+        animation: moveAnimation ease 30s infinite
+      }
+      
+      .galleryContainer > .bounding {
+        @apply overflow-hidden;
+      }
+      
+      @keyframes moveAnimation {
+          0% {
+            transform: translateX(0);
+          }
+          32% {
+            transform: translateX(0);
+          }
+          33% {
+            transform: translateX(-100%);
+          }
+          65% {
+            transform: translateX(-100%);
+          }
+          66% {
+            transform: translateX(-200%);
+          }
+          99% {
+            transform: translateX(-200%);
+          }
+          100% {
+            transform: translateX(0);
+          }
+        }
+            
+      h2 {
+        @apply text-center;
+        @apply text-5xl;
+        @apply p-2;
+        @apply bg-white;
+        @apply rounded-lg;
+        @apply shadow-lg;
+        @apply mx-auto;
+      }
+        
+      
+    }
+  </style>
+</head>

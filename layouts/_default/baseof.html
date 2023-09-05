@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    {{ partial "head.html" . }}
+    <body>
+        <main>
+            <article>
+                <div class="fakeHeader">BFHS-OPEN</div>
+                                
+                <h1>{{ .Title }}</h1>
+                {{ partial "header.html" . }}
+                                
+                <hr>
+            
+                {{ block "main" . }}{{ end }}
+            </article>
+        </main>
+    </body>
+</html>

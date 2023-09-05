@@ -1,0 +1,35 @@
+baseURL = 'http://bfhs-open.org/'
+languageCode = 'en-us'
+title = 'BFHS-OPEN'
+
+[socials]
+  github = "bfhs-open"
+  twitter = "bfhs-open"
+  instagram = "bfhs-open"
+  youtube = "bfhs-open"
+  discord = "bfhs-open"
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "About"
+  url = "/about"
+  weight = 2
+
+[[menu.main]]
+  name = "Projects"
+  url = "/projects"
+  weight = 3
+
+[[menu.main]]
+  name = "Education"
+  url = "/education"
+  weight = 4
+
+[[menu.main]]
+  name = "Blog"
+  url = "/blog"
+  weight = 5

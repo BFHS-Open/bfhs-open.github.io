@@ -1,0 +1,23 @@
+[[stewarded]]
+name = "Website"
+description = "This Website"
+link = "https://bfhs-open.github.io"
+members = [ "John Doe", "Jane Doe" ]
+
+[[stewarded]]
+name = "Benpage"
+description = "Our school's new-tab page"
+link = "https://google.come"
+members = [ "Jane Doe" ]
+
+[[affiliated]]
+name = "Game"
+description = "some generic game by a student"
+link = "https://github.com"
+members = [ "Joe Mama" ]
+
+[[contributed]]
+name = "Actual project"
+description = "Really cool"
+link = "https://google.com"
+members = [ "The thingy" ]

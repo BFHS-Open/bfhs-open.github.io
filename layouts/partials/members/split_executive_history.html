@@ -1,0 +1,11 @@
+{{ $executives := . }}
+
+{{ $s := newScratch }}
+
+{{ range $exec := $executives }}
+  {{ range $exec.history }}
+    {{ $s.Add "members" (slice (dict "name" $exec.name "graduation_year" $exec.graduation_year "socials" $exec.socials "position" .position "year" .year ))}}
+  {{ end }}
+{{ end }}
+
+{{ return ($s.Get "members") }}
